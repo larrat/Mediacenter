@@ -17,7 +17,7 @@ header {
     overflow-x: hidden;
     display: flex;
     justify-content: space-between;
-    width: 990px;
+    width: 900px;
 }
 
 .logo {
@@ -63,6 +63,7 @@ nav a:hover {
     background-position: center;
     background-size: cover;
     height: 670px;
+    min-height: 670px;
 }
 
 .colunm {
@@ -83,7 +84,7 @@ nav a:hover {
     text-shadow: 0px 1px 0px #555555;
     margin: 0;
     padding: 0;
-    width: 300px;
+    max-width: 350px;
 }
 
 .banner_readline h2 {
@@ -153,6 +154,10 @@ nav a:hover {
     justify-content: center;    
 }
 
+#geral section, 
+#geral aside {
+    padding-left: 20px;
+}
 #geral section {
     flex: 2;
 }
@@ -187,13 +192,12 @@ nav a:hover {
 
 .widget_depar div {
     background-color: #39a9e1;
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .desc {
@@ -240,7 +244,8 @@ address span {
 
 article {
     flex: 1;
-    min-width: 300px;
+    flex-wrap: wrap;
+    min-width: 250px;
     margin-right: 20px;
 }
 
@@ -322,7 +327,6 @@ footer {
 
 .footer_area {
     display: flex;
-    
 }
 
 .footer_areaitem {
@@ -389,6 +393,19 @@ footer {
     margin-left: 30px;
     margin-top: 3px;
     color: #0079c7;
+}
+
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+.mm_line {
+    height: 3px;
+    background-color: #42b3e5;
 }
 
 @media (max-width: 1025px) and (min-width: 750px) {
